@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Examination </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>ONLINE EXAMINATION </h1>
+    <p>Welcome to Online Examination Portal</p>
+</header>
+
+<!-- Home Page -->
+<div class="home" id="home">
+    <h2>Select Your Login</h2>
+
+    <button onclick="showStudent()">Student</button>
+    <button onclick="showAdmin()">Admin</button>
+</div>
+
+<!-- STUDENT SECTION -->
+<div class="container" id="studentSection">
+
+    <h2>Student Portal</h2>
+
+    <div class="card" id="studentLogin">
+        <h3>Student Login</h3>
+
+        <input type="email" id="studentEmail"
+        placeholder="Enter Email">
+
+        <input type="password" id="studentPassword"
+        placeholder="Enter Password">
+
+        <button onclick="studentLogin()">Login</button>
+
+        <p>New Student?</p>
+        <button onclick="showRegister()">Register</button>
+    </div>
+
+    <!-- Registration -->
+    <div class="card" id="studentRegister">
+        <h3>Student Registration</h3>
+
+        <input type="text" id="studentName"
+        placeholder="Enter Name">
+
+        <input type="email" id="regEmail"
+        placeholder="Enter Email">
+
+        <input type="password" id="regPassword"
+        placeholder="Enter Password">
+
+        <input type="text" id="rollNumber"
+        placeholder="Enter Roll Number">
+
+        <input type="text" id="course"
+        placeholder="Enter Course">
+
+        <button onclick="registerStudent()">Register</button>
+        <button onclick="showStudentLogin()">Back to Login</button>
+    </div>
+
+    <!-- Student Information -->
+    <div class="card" id="studentDashboard">
+        <h3>Student Information</h3>
+
+        <p id="displayName"></p>
+        <p id="displayEmail"></p>
+        <p id="displayRoll"></p>
+        <p id="displayCourse"></p>
+
+        <h3>Available Exams</h3>
+        <div id="studentExams"></div>
+
+        <button onclick="logout()">Logout</button>
+    </div>
+
+</div>
+
+<!-- ADMIN SECTION -->
+<div class="container" id="adminSection">
+
+    <h2>Admin Portal</h2>
+
+    <!-- Admin Login -->
+    <div class="card" id="adminLogin">
+        <h3>Admin Login</h3>
+
+        <input type="text" id="adminUsername"
+        placeholder="Admin Username">
+
+        <input type="password" id="adminPassword"
+        placeholder="Admin Password">
+
+        <button onclick="adminLogin()">Login</button>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <div class="card" id="adminDashboard">
+
+        <h2>Admin Dashboard</h2>
+
+        <!-- Create Exam -->
+        <h3>Create Exam</h3>
+
+        <input type="text" id="examName"
+        placeholder="Enter Exam Name">
+
+        <button onclick="createExam()">Create Exam</button>
+
+        <h3>Available Exams</h3>
+        <div id="examList"></div>
+
+        <!-- Add Questions -->
+        <h3>Add Questions</h3>
+
+        <input type="text" id="question"
+        placeholder="Enter Question">
+
+        <input type="text" id="option1"
+        placeholder="Option 1">
+
+        <input type="text" id="option2"
+        placeholder="Option 2">
+
+        <input type="text" id="option3"
+        placeholder="Option 3">
+
+        <input type="text" id="option4"
+        placeholder="Option 4">
+
+        <select id="answer">
+            <option value="">Select Correct Answer</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+        </select>
+
+        <button onclick="addQuestion()">Add Question</button>
+
+        <!-- Question List -->
+        <h3>Manage Questions</h3>
+        <div id="questionList"></div>
+
+        <!-- Results -->
+        <h3>View Results</h3>
+        <div id="results">No results available</div>
+
+        <button onclick="logout()">Logout</button>
+
+    </div>
+
+</div>
+
+<button class="back" onclick="goHome()">Back to Home</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>

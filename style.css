@@ -1,0 +1,132 @@
+.home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 90%;
+    max-width: 500px;
+
+    text-align: center;
+    background: white;
+    padding: 40px;
+
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.home h2 {
+    margin-bottom: 25px;
+    color: #243b55;
+}
+
+.home button {
+    width: 130px;
+    padding: 14px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.back {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    background: #243b55;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.back:hover {
+    background: #141e30;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f4f9;
+}
+
+header {
+    background: #243b64;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 750px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #ccc;
+}
+
+h2, h3 {
+    color: #243b64;
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #243b64;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 8px 3px;
+}
+
+button:hover {
+    background: #4169a1;
+}
+
+.hidden {
+    display: none;
+}
+
+#examList, #questionList, #results {
+    margin-top: 20px;
+}
+
+.exam-card, .question-card {
+    background: #f1f4f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+
+#timer {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.question label {
+    display: block;
+    margin: 10px 0;
+}
